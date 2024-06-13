@@ -1,10 +1,20 @@
-import { Link } from "react-scroll";
+import { useEffect } from "react";
+import { Link, Element, Events, scrollSpy } from "react-scroll";
 import { FaLinkedinIn, FaGithub, FaTwitch } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Hero() {
+  useEffect(() => {
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
   return (
-    <div name="hero" className="w-full h-screen text-center">
+    <Element name="hero" className="w-full h-screen text-center">
       <div className="w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest">Let&#39;s Connect</p>
@@ -52,6 +62,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 }

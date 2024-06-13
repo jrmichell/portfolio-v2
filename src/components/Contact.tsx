@@ -1,12 +1,22 @@
-import { Link } from "react-scroll";
+import { useEffect } from "react";
+import { Link, Element, Events, scrollSpy } from "react-scroll";
 import ContactImg from "../assets/contact.jpg";
 import { FaLinkedinIn, FaGithub, FaTwitch } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { Widget } from "@typeform/embed-react";
+import TypeformEmbed from "./TypeformEmbed";
 
 export default function Contact() {
+  useEffect(() => {
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
   return (
-    <div name="contact" className="w-full lg:h-screen z-100">
+    <Element name="contact" className="w-full lg:h-screen z-100">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase py-4 text-[#5651e5]">
           Contact
@@ -69,13 +79,11 @@ export default function Contact() {
           </div>
           {/* right */}
           <div className="col-span-3 w-full shadow-xl rounded-xl lg:p-4">
-            <div className="p-4">
-              <Widget
-                id="Ip1URDkh"
+            <div className="flex justify-center items-center">
+              <TypeformEmbed
+                formId="Ip1URDkh"
                 className="flex justify-center items-center text-size-[20px] p-4 mt-4 w-full h-[620px] z-[-100]"
-              >
-                Let&#39;s Connect
-              </Widget>
+              />
             </div>
           </div>
         </div>
@@ -89,6 +97,6 @@ export default function Contact() {
           </Link>
         </div>
       </div>
-    </div>
+    </Element>
   );
 }

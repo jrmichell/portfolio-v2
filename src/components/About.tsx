@@ -1,8 +1,19 @@
+import { useEffect } from "react";
+import { Element, Events, scrollSpy } from "react-scroll";
 import AboutImg from "../assets/about.jpg";
 
 export default function About() {
+  useEffect(() => {
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
   return (
-    <div
+    <Element
       name="about"
       className="w-full md:h-screen px-8 flex justify-center items-center py-16"
     >
@@ -26,6 +37,6 @@ export default function About() {
           <img src={AboutImg} className="rounded-xl" alt="About Image" />
         </div>
       </div>
-    </div>
+    </Element>
   );
 }
