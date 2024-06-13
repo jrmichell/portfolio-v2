@@ -31,9 +31,6 @@ export default function Navbar() {
             <Link to="about">About</Link>
           </li>
           <li className="cursor-pointer">
-            <Link to="portfolio">Portfolio</Link>
-          </li>
-          <li className="cursor-pointer">
             <Link to="contact">Contact</Link>
           </li>
         </ul>
@@ -93,9 +90,6 @@ export default function Navbar() {
                   </li>
                   <li onClick={toggleNav}>
                     <Link to="about">About</Link>
-                  </li>
-                  <li onClick={toggleNav}>
-                    <Link to="portfolio">Portfolio</Link>
                   </li>
                   <li onClick={toggleNav}>
                     <Link to="contact">Contact</Link>
