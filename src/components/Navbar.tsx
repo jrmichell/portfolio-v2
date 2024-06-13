@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="fixed bg-base-100 opacity-100 w-full shadow-md">
       <div className="flex justify-center items-center mt-1 mx-4 gap-8">
         <div className="flex justify-start items-center gap-2">
-          <Link to="home">
+          <Link to="hero">
             <img
               src={Logo}
               alt="Logo"
