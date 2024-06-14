@@ -11,8 +11,8 @@ interface TypeformEmbedProps {
 
 const TypeformEmbed: React.FC<TypeformEmbedProps> = ({
   formId,
-  height = 500,
-  width = 700,
+  height,
+  width,
   className,
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);

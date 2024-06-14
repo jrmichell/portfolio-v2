@@ -19,14 +19,14 @@ export default function Contact() {
 
   return (
     <Element name="contact" className="w-full lg:h-screen z-100">
-      <div className="w-full m-auto px-2 py-16">
+      <div className="max-w-[1240px] w-full m-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase py-4 text-[#5651e5]">
           Contact
         </p>
         <h2 className="py-4">Let&#39;s Connect</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid lg:grid-cols-4 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl rounded-xl p-4">
+          <div className="col-span-2 w-full h-full shadow-xl rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
                 <img
@@ -82,11 +82,12 @@ export default function Contact() {
             </div>
           </div>
           {/* right */}
-          <div className="col-span-3 w-full shadow-xl rounded-xl lg:p-4">
+          <div className="col-span-2 w-full shadow-xl rounded-xl lg:p-4">
             <div className="flex justify-center items-center">
               <TypeformEmbed
                 formId={formId}
-                className="flex justify-center items-center text-size-[20px] mt-4 z-[-100]"
+                height={550}
+                className="p-4 w-full"
               />
             </div>
           </div>
@@ -95,7 +96,10 @@ export default function Contact() {
           <Link to="hero" smooth={true} duration={300}>
             <div>
               <div className="rounded-full shadow-lg p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp className="text-primary" size={30} />
+                <HiOutlineChevronDoubleUp
+                  className="text-[#5651e5]"
+                  size={30}
+                />
               </div>
             </div>
           </Link>
