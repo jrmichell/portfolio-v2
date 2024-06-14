@@ -10,7 +10,6 @@ export default function Contact() {
 
   useEffect(() => {
     scrollSpy.update();
-
     return () => {
       Events.scrollEvent.remove("begin");
       Events.scrollEvent.remove("end");
@@ -86,7 +85,7 @@ export default function Contact() {
             <div className="flex justify-center items-center">
               <TypeformEmbed
                 formId={formId}
-                height={620}
+                height={640}
                 className="p-4 w-full"
               />
             </div>
