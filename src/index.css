@@ -23,4 +23,14 @@
   h2 {
     @apply text-3xl sm:text-4xl;
   }
+
+  .my-form .typeform-widget {
+    @apply w-full;
+  }
+
+  .my-form .typeform-widget .tf-v1-screen button {
+    @apply max-w-xs w-auto;
+    width: auto !important;
+    max-width: 200px !important; /* Adjust this value to your needs */
+  }
 }
