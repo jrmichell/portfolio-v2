@@ -24,7 +24,7 @@ export default function Contact() {
           Contact
         </p>
         <h2 className="py-4">Let&#39;s Connect</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl rounded-xl p-4">
             <div className="lg:p-4 h-full">
