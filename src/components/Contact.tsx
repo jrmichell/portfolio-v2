@@ -86,7 +86,7 @@ export default function Contact() {
             <div className="flex justify-center items-center">
               <TypeformEmbed
                 formId={formId}
-                height={550}
+                height={620}
                 className="p-4 w-full"
               />
             </div>
