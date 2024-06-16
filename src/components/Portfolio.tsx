@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Element, Events, scrollSpy } from "react-scroll";
 import CrimsonOrb from "../assets/CrimsonOrb.jpeg";
 import Helvera from "../assets/Helvera.jpeg";
-import Klink from "../assets/Klink.jpeg";
 
 export default function Portfolio() {
   useEffect(() => {
