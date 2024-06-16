@@ -18,7 +18,7 @@ export default function Contact() {
 
   return (
     <Element name="contact" className="w-full lg:h-screen z-100">
-      <div className="max-w-[1240px] w-full m-auto px-2 py-16">
+      <div className="max-w-[1240px] w-full m-auto px-8 py-16">
         <p className="text-xl tracking-widest uppercase py-4 text-[#5651e5]">
           Contact
         </p>

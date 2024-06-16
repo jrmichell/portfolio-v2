@@ -32,6 +32,9 @@ export default function Navbar() {
             <Link to="about">About</Link>
           </li>
           <li className="cursor-pointer">
+            <Link to="portfolio">Portfolio</Link>
+          </li>
+          <li className="cursor-pointer">
             <Link to="contact">Contact</Link>
           </li>
         </ul>
@@ -60,13 +63,16 @@ export default function Navbar() {
                 </svg>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-16 mr-4 z-[1] p-1 shadow bg-base-100 rounded-box w-24"
+                  className="menu menu-sm dropdown-content mt-16 mr-4 z-[1] p-1 shadow bg-base-100 rounded-box w-32"
                 >
                   <li onClick={toggleNav}>
                     <Link to="hero">Home</Link>
                   </li>
                   <li onClick={toggleNav}>
                     <Link to="about">About</Link>
+                  </li>
+                  <li onClick={toggleNav}>
+                    <Link to="portfolio">Portfolio</Link>
                   </li>
                   <li onClick={toggleNav}>
                     <Link to="contact">Contact</Link>
