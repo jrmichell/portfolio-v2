@@ -22,7 +22,7 @@ export default function Portfolio() {
               Portfolio
             </p>
             <h2 className="py-4">What I've Done</h2>
-            <p className="py-2">
+            <p className="py-2 mr-8">
               Here are some of the projects I have worked on. Click on the
               images to view the project and scroll to view more. if it is
               available. I will add more to this portfolio as time goes on. If
