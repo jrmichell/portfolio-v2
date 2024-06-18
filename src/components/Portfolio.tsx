@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Element, Events, scrollSpy } from "react-scroll";
-import CrimsonOrb from "../assets/Crimsonorb.png";
+import CrimsonOrb from "../assets/CrimsonOrb.png";
 import Helvera from "../assets/Helvera.png";
+import TaskMaster from "../assets/TaskMaster.png";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -42,6 +43,14 @@ export default function Portfolio() {
                   <img src={Helvera} className="w-full" />
                 </a>
               </div>
+              <div id="item3" className="carousel-item w-full">
+                <a
+                  href="https://github.com/jrmichell/taskmaster-frontend"
+                  target="_blank"
+                >
+                  <img src={TaskMaster} className="w-full" />
+                </a>
+              </div>
             </div>
             <div className="flex justify-center w-full py-2 mt-2 gap-2">
               <a href="#item1" className="btn btn-md text-secondary">
@@ -49,6 +58,9 @@ export default function Portfolio() {
               </a>
               <a href="#item2" className="btn btn-md text-secondary">
                 2
+              </a>
+              <a href="#item3" className="btn btn-md text-secondary">
+                3
               </a>
             </div>
           </div>
