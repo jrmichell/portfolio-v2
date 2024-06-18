@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Element, Events, scrollSpy } from "react-scroll";
-import CrimsonOrb from "../assets/CrimsonOrb.jpeg";
-import Helvera from "../assets/Helvera.jpeg";
+import CrimsonOrb from "../assets/Crimsonorb.png";
+import Helvera from "../assets/Helvera.png";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -30,21 +30,25 @@ export default function Portfolio() {
               free to reach out to me.
             </p>
           </div>
-          <div className="carousel carousel-center max-w-2xl p-4 space-x-4 shadow-xl rounded-box">
-            <div className="carousel-item">
-              <a href="https://crimsonorb.com" target="_blank">
-                <img
-                  src={CrimsonOrb}
-                  className="rounded-box w-72 h-96 hover:scale-105 duration-300 ease-in"
-                />
-              </a>
+          <div>
+            <div className="carousel w-full rounded-xl shadow-lg shadow-gray-400">
+              <div id="item1" className="carousel-item w-full">
+                <a href="https://crimsonorb.com" target="_blank">
+                  <img src={CrimsonOrb} className="w-full" />
+                </a>
+              </div>
+              <div id="item2" className="carousel-item w-full">
+                <a href="https://helvera.vercel.app" target="_blank">
+                  <img src={Helvera} className="w-full" />
+                </a>
+              </div>
             </div>
-            <div className="carousel-item">
-              <a href="https://helvera.vercel.app">
-                <img
-                  src={Helvera}
-                  className="rounded-box w-72 h-96 hover:scale-105 duration-300 ease-in"
-                />
+            <div className="flex justify-center w-full py-2 mt-2 gap-2">
+              <a href="#item1" className="btn btn-md text-secondary">
+                1
+              </a>
+              <a href="#item2" className="btn btn-md text-secondary">
+                2
               </a>
             </div>
           </div>
